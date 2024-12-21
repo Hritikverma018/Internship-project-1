@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(229, 223, 240);
+}
+
+.calculator {
+    background:url(maths.png);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+.display {
+    width: 90%;
+    height: 50px;
+    font-size: 20px;
+    margin: 25px 0 25px ;
+    padding: 15px;
+    text-align: right;
+    border: 1px solid #997070;
+    border-radius: 5px;
+    background-color: #f0f2f6;
+    pointer-events: none;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    background-color: #0c0c0c;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #474545;
+    transform: translateY(-2px);
+    transition: 1ms;
+}
+
+#equal{
+    background-color: #008000;
+    color: white;
+}
+#equal:hover{
+    transform: translateY(-2px);
+    transition: 1ms;
+    background: #279d1a;
+
+}
+
+button.clear {
+    background-color: #ef4242;
+    color: white;
+}
+
+button.clear:hover {
+    background-color: #df1313;
+    transform: translateY(-2px);
+    transition: 1ms;
+    
+}
+button.delete {
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    color: white;
+    font-weight: bold;
+}
+
+button.delete:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+button.delete:active {
+    transform: translateY(2px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
